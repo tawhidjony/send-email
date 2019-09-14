@@ -9,5 +9,12 @@
         "psr-4": {
             "tawhid\\contact\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tawhid\\contact\\ContactServiceProvider"
+            ]
+        }
     }
 }
