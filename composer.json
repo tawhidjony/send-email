@@ -1,0 +1,13 @@
+{
+    "name": "tawhid/contact",
+    "description": "This will send email admin to others",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "tawhid\\contact\\": "src/"
+        }
+    }
+}
