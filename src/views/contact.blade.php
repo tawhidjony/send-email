@@ -25,17 +25,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="">
-                <form class="card emailFromLayout">
+                <form class="card emailFromLayout" action="{{route('contact.post')}}" method="post">
+                    @csrf
                     <div class="card-body">
                         <h3><i class="fa fa-envelope" aria-hidden="true"></i> Contact us</h3><hr>
                     <div class="form-group">
                         <label for="name">Your Full Name : </label>
-                        <input type="text" class="form-control" id="name"  placeholder="Enter Your Full Name">
+                        <input type="text" class="form-control" name="name"  placeholder="Enter Your Full Name">
                     </div>
                     <div class="form-group">
                         <label for="Email">Enter Your Email : </label>
-                        <input type="email" class="form-control" placeholder="Enter Your Email Address">
+                        <input type="email"  name="email" class="form-control" placeholder="Enter Your Email Address">
                     </div>
                     <div class="form-group">
                     <label for="message">Ddescribe Your Message : </label>
@@ -44,7 +44,6 @@
                     <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send Email</button>
                     </div>
                 </form>
-                </div>
             </div>
         </div>
     </div>
